@@ -1,0 +1,13 @@
+.card{
+  width: 20rem;
+}
+
+.Card{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn{
+  margin: 0 auto;
+  display: block;
+}
