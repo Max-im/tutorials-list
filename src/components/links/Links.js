@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './Links.css';
-import Card from '../../containers/card/Card'
-import Herro from '../../containers/herro/Herro'
+import Card from '../../containers/card/Card';
+import Herro from '../../containers/herro/Herro';
+import data from '../../assets/linksData';
+
 
 class Links extends Component {
   render() {
@@ -12,7 +14,7 @@ class Links extends Component {
           parag="This is usefull links for you learning" 
         />
         <div className="container">
-          <Card />
+          <Card data={data} />
         </div>
 
         

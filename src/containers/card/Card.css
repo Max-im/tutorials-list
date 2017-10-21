@@ -5,9 +5,17 @@
 .Card{
   margin-top: 50px;
   margin-bottom: 50px;
+  list-style: none;
 }
 
 .btn{
   margin: 0 auto;
   display: block;
+}
+
+
+.cardWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
