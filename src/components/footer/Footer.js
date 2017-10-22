@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 import './Footer.css';
 import FooterList from '../../containers/footerList/FooterList';
+import { Link } from 'react-router';
 
-const menu = [
-  {link: "#", name: "Courses"},
-  {link: "#", name: "Links"},
-  {link: "#", name: "Games"}
-];
 const externalLinks = [
   {link: "https://max-im.github.io/", name: "Resume"},
   {link: "#", name: "Portfolio"},
@@ -22,9 +18,19 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="container footerContainer">
-          <FooterList data={menu} title="Menu"/>
+
+          <div className="footer-block">
+            <h3 className="footer-title">Menu</h3>
+            <ul className="footer-nav">
+              <Link to = "/" className="nav-link">Courses</Link>
+              <Link to = "/links" className="nav-link">Links</Link>
+              <Link to = "/games" className="nav-link">Games</Link>
+            </ul>
+          </div>
+
           <FooterList data={externalLinks} title="Contacts"/>
           <FooterList data={socialLinks} title="Social"/>
+
         </div>
       </footer>
     );

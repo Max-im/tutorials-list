@@ -17,7 +17,7 @@ class Games extends Component {
         <div className="Games">
           <Herro 
             title="Games" 
-            parag="A few games for programmers. Learn by playing" 
+            parag="A few games for programmers. Learn while playing!" 
           />
           <div className="container">
             <Card data={data} btnTxt="Go"/>

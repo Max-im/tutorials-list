@@ -5,7 +5,7 @@ function FooterList(props){
   const data=props.data;
   const itemList = data.map( (item, index) => 
     <li className="footer-list-item" key={index}>
-      <a className="nav-link" href={item.link}>{item.name}</a>
+      <a className="nav-link" target="_blank" href={item.link}>{item.name}</a>
     </li>
   );
 
