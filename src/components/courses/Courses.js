@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Courses.css';
 import Card from '../../containers/card/Card';
 import Herro from '../../containers/herro/Herro';
-import data from '../../assets/tutorialsData';
+import data from '../../assets/coursesData';
 
 
 
