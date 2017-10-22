@@ -15,7 +15,7 @@ class Courses extends Component {
           parag="This is a group of the best courses and resourses for teaching code" 
         />
         <div className="container">
-          <Card data={data}/>
+          <Card data={data} btnTxt="Go"/>
         </div>
 
         
