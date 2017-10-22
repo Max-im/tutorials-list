@@ -4,7 +4,7 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
+      <header className="Header">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
          
           <div className="container">
@@ -23,6 +23,9 @@ class Header extends Component {
                 <li className="nav-item">
                   <a className="nav-link" href="#">Links</a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">Games</a>
+                </li>
                 
               </ul>
             </div>
@@ -30,7 +33,7 @@ class Header extends Component {
           </div>
         </nav>
         
-      </div>
+      </header>
     );
   }
 }

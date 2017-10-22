@@ -1,46 +1,14 @@
-
-.Card{
-  margin-top: 20px;
-  width: 23%;
-  box-shadow: 0 0 3px rgba(0,0,0,.2);
-}
-.Card:hover{
-  box-shadow: 0 0 5px rgba(0,106,218,.8);
+.footer-nav{
+  padding: 0;
 }
 
-.btn{
-  margin: 0 auto;
-  display: block;
-}
-
-
-.cardWrapper{
-  margin: 50px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-
-.card-img-wrap{
-  height: 200px;
-  width: 100%;
-  display: flex;
-  padding: 20px;
-  border-bottom: 1px solid #E9ECEF;
+.footer-block{
+  width: 33%;
+  text-align: center;
 }
 
 
 
-.card-img{
-  margin: auto;
-  max-height: 100%;
-  width: auto;
-}
-
-.card-title{
-  height: 50px;
-}
 
 
 
@@ -58,13 +26,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   
-  .Card{
-    width: 30%;
-  }
-
-  .card-title{
-    font-size: 1.2rem;;
-  }
+ 
 
 }
 
@@ -75,24 +37,23 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-  .Card{
-    width: 48%;
-  }
+ 
+
 
 }
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
- .card-img-wrap{
-    height: 130px;
-    padding: 10px;
-    border-bottom: 1px solid #E9ECEF;
-  }
+  
+.footer-title{
+  font-size: 1.1rem;
+}
 
- .card-title{
-    font-size: 1rem;;
-  }
+.footer-list-item{
+  font-size: .9rem;
+
+}
 
 
 }

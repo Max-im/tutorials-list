@@ -1,3 +1,7 @@
 li{
   list-style: none;
 }
+
+.main{
+  min-height: calc(100vh - 60px - 200px);
+}

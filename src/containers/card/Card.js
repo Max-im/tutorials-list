@@ -6,7 +6,6 @@ function Card(props) {
   const data = props.data.sort( (a, b) => {
     if(a.name > b.name) return 1;
   });
-  console.log(data);
   const listItems = data.map((item, index) =>
     <li className="Card" key={index}>
       <div className="card">
