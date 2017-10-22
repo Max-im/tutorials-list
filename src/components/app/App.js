@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from '../header/Header'
-import Courses from '../courses/Courses'
-import Links from '../links/Links'
-import Footer from '../footer/Footer'
+import Header from '../header/Header';
+import Courses from '../courses/Courses';
+import Links from '../links/Links';
+import Games from '../games/Games';
+import Footer from '../footer/Footer';
+
+
 
 
 class App extends Component {
@@ -16,6 +19,7 @@ class App extends Component {
         <main className="main">
           <Courses />
           <Links />
+          <Games />
         </main>
 
         <Footer />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 class Header extends Component {
   render() {
@@ -18,13 +19,13 @@ class Header extends Component {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#">Courses <span className="sr-only">(current)</span></a>
+                  <a className="nav-link" Link to = "/courses">Courses <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Links</a>
+                  <a className="nav-link" Link to = "/links">Links</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">Games</a>
+                  <a className="nav-link" Link to = "/games">Games</a>
                 </li>
                 
               </ul>
