@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
 import './Single.css';
-import Header from '../../containers/header/Header';
-import Footer from '../footer/Footer';
+import Herro from '../../containers/herro/Herro';
 
 
 
 
 class Single extends Component {
   render() {
-    return (
-      <div>
-        <Header />
-        <div className="Single">
-          <div className="container">
+    const propObj = this.props.category;
 
-          </div>
+
+    return (
+      <div className="Single">
+        <Herro 
+          title={propObj.name} 
+          parag="category" 
+        />
+        <div className="container single-container">
+          <img className="single-img" src={propObj.img} alt={propObj.name} /> 
+          <p>{propObj.name}</p>
         </div>
-        <Footer />
       </div>
     );
   }

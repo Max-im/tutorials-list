@@ -9,6 +9,7 @@ import App from './components/app/App';
 import Courses from './components/courses/Courses';
 import Links from './components/links/Links';
 import Games from './components/games/Games';
+import Single from './components/single/Single';
 import NotFound from './containers/notFoutd/NotFound';
 
 
@@ -18,7 +19,9 @@ ReactDOM.render(
   <Route  path="/" component={App}>
     <IndexRoute component={Courses} />
     <Route path="/games" component={Games} />
-    <Route path="/links" component={Links} />
+    <Route path="/links" component={Links} >
+       <Route path=':category' component={Single} />
+    </Route>
     <Route path="*" component={NotFound} />
   </Route>
 </Router>
