@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import './Courses.css';
-import Header from '../header/Header';
 import Card from '../../containers/card/Card';
-import Herro from '../../containers/herro/Herro';
-import Footer from '../footer/Footer';
 import data from '../../assets/coursesData';
-
+import Herro from '../../containers/herro/Herro';
 
 
 class Courses extends Component {
   render() {
     return (
       <div>
-        <Header />
         <div className="Courses">
           <Herro 
             title="Courses" 
@@ -22,7 +18,6 @@ class Courses extends Component {
             <Card data={data} btnTxt="Go"/>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

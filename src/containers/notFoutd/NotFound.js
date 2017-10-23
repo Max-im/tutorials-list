@@ -1,6 +1,6 @@
 import React from 'react';
 import './NotFound.css';
-import Header from '../../components/header/Header';
+import Header from '../header/Header';
 
 function NotFound(props){
   return (

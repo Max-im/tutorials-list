@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
@@ -15,10 +15,12 @@ import NotFound from './containers/notFoutd/NotFound';
 
 ReactDOM.render(
 <Router history={hashHistory}>
-  <Route path="/" component={App} />
-  <Route path="/links" component={Links} />
-  <Route path="/games" component={Games} />
-  <Route path="*" component={NotFound} />
+  <Route  path="/" component={App}>
+    <IndexRoute component={Courses} />
+    <Route path="/games" component={Games} />
+    <Route path="/links" component={Links} />
+    <Route path="*" component={NotFound} />
+  </Route>
 </Router>
 , 
   document.getElementById('root'));

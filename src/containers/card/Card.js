@@ -22,7 +22,7 @@ function Card(props) {
   );
 
   return (
-    <ul className="cardWrapper">{listItems}</ul>
+    <ul className="cardWrapper">{listItems} </ul>
   );
 }
 

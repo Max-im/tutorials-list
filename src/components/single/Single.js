@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import './App.css';
-import Courses from '../courses/Courses';
+import './Single.css';
 import Header from '../../containers/header/Header';
 import Footer from '../footer/Footer';
 
 
-class App extends Component {
+
+
+class Single extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        {this.props.children}
+        <div className="Single">
+          <div className="container">
+
+          </div>
+        </div>
         <Footer />
       </div>
     );
   }
 }
 
-export default App;
+export default Single;
