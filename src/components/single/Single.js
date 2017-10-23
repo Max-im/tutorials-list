@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Single.css';
-import Herro from '../../containers/herro/Herro';
+import SingleHerro from '../../containers/singleHerro/SingleHerro';
 
 
 
@@ -8,17 +8,24 @@ import Herro from '../../containers/herro/Herro';
 class Single extends Component {
   render() {
     const propObj = this.props.category;
+        console.log(propObj.link)
+    const listItems = propObj.link.map( ( item, index ) => 
+       <li key={index} className="list-group-item">
+        <b>{index+1}. </b>
+        <a href={item.link} target="_blank"> {item.name} </a>
+       </li>
+    )
 
 
     return (
       <div className="Single">
-        <Herro 
+        <SingleHerro 
           title={propObj.name} 
           parag="category" 
+          img={propObj.img}
         />
         <div className="container single-container">
-          <img className="single-img" src={propObj.img} alt={propObj.name} /> 
-          <p>{propObj.name}</p>
+          <ul className="list-group">{listItems}</ul>
         </div>
       </div>
     );

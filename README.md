@@ -17,8 +17,9 @@
 ## Used:  
   - NPM;
   - React;
-  - React-CLI;
+  - React-CLI (webpack);
   - React-Router@3;
+  - Bootstrap;
   - HTML-5;
   - CSS-3;
   - ES6.
