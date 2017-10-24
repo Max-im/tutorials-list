@@ -1,11 +1,13 @@
 import React from 'react';
 import './Card.css';
+import PropTypes from 'prop-types';
 
 function Card(props) {
   
   const data = props.data.sort( (a, b) => {
     if(a.name > b.name) return 1;
   });
+
   const listItems = data.map((item, index) =>
     <li className="Card" key={index}>
       <div className="card">
@@ -21,10 +23,17 @@ function Card(props) {
     </li>
   );
 
+
   return (
     <ul className="cardWrapper">{listItems} </ul>
   );
 }
+
+Card.propTypes = {
+  data: PropTypes.array.isRequired,
+}
+
+
 
 export default Card;
 

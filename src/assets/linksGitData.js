@@ -1,4 +1,4 @@
-const linksData = [
+const linksGitData = [
   {
     link: 'https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer/blob/master/README.md',
     name: 'Become-A-Full-Stack-Web-Developer',
@@ -10,11 +10,7 @@ const linksData = [
   {
     link: 'https://github.com/rtivital/react-things/blob/master/README.md',
     name: 'React-things',
-  },
-  {
-    link: 'https://proglib.io/p/becoming-fullstack-dev-in-2017/',
-    name: 'Becoming-fullstack',
   }
 ];
 
-export default linksData;
+export default linksGitData;

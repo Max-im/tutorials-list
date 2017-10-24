@@ -8,8 +8,10 @@ import SingleHerro from '../../containers/singleHerro/SingleHerro';
 class Single extends Component {
   render() {
     const propObj = this.props.category;
-        console.log(propObj.link)
-    const listItems = propObj.link.map( ( item, index ) => 
+    const data = propObj.link.sort( (a, b) => {
+      if(a.name > b.name) return 1;
+    });
+    const listItems = data.map( ( item, index ) => 
        <li key={index} className="list-group-item">
         <b>{index+1}. </b>
         <a href={item.link} target="_blank"> {item.name} </a>

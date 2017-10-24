@@ -4,10 +4,16 @@ import Card from '../../containers/card/Card';
 import Herro from '../../containers/herro/Herro';
 import data from '../../assets/gamesData';
 
-
+let api;
 
 
 class Games extends Component {
+  
+  componentWillMount() {
+    api = data;
+  }
+
+
   render() {
     return (
       <div className="Games">
@@ -16,7 +22,7 @@ class Games extends Component {
           parag="A few games for programmers. Learn while playing!" 
         />
         <div className="container">
-          <Card data={data} btnTxt="Go"/>
+          <Card data={ api } btnTxt="Go"/>
         </div>
       </div>
     );

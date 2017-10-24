@@ -20,7 +20,7 @@ ReactDOM.render(
     <IndexRoute component={Courses} />
     <Route path="/games" component={Games} />
     <Route path="/links" component={Links} >
-       <Route path=':category' component={Single} />
+        <Route path=':category' component={Links} />
     </Route>
     <Route path="*" component={NotFound} />
   </Route>

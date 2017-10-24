@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import PropTypes from 'prop-types';
+
 import './Category.css';
 
 function Category(props) {
@@ -25,6 +27,11 @@ function Category(props) {
   return (
     <ul className="cardWrapper">{listItems} </ul>
   );
+}
+
+
+Category.propTypes = {
+  data: PropTypes.array.isRequired,
 }
 
 export default Category;

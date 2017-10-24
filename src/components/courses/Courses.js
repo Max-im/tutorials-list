@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import './Courses.css';
 import Card from '../../containers/card/Card';
-import data from '../../assets/coursesData';
 import Herro from '../../containers/herro/Herro';
+import data from '../../assets/coursesData';
 
+let api;
 
 class Courses extends Component {
+  
+  componentWillMount() {
+    api = data;
+  }
+
   render() {
     return (
       <div>
@@ -15,7 +21,7 @@ class Courses extends Component {
             parag="This is a group of the best courses and resourses for teaching code" 
           />
           <div className="container">
-            <Card data={data} btnTxt="Go"/>
+            <Card data={api} btnTxt="Go"/>
           </div>
         </div>
       </div>
