@@ -9,7 +9,7 @@ function Card(props) {
   });
 
   const listItems = data.map((item, index) =>
-    <li className="Card" key={index}>
+    <li className="Cards" key={index}>
       <div className="card">
         <div className="card-img-wrap">
           <img className="card-img" src={item.img} alt="Card image cap" />

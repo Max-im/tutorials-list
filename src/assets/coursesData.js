@@ -3,6 +3,10 @@ const coursesData = [
         "name":"GoIt",
         "img": "https://s.dou.ua/CACHE/images/img/events/go-it-logo_3Agn2sV/e4946d1d4661af544cbf124ecb5d6b88.png",
         "link":"https://app.schoology.com/home"
+    },{
+        "name":"Hexlet",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNAai1f4-FFXy4dkbQm8jdcb2QJ1rUTRI2C9zyjhkmWfa5Kr7",
+        "link":"https://hexlet.io/"
     },
     {
         "name":"Udemy",
